@@ -1,0 +1,69 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+/* Medium Screens */
+@media (min-width: 600px) {
+  .grid-1 {
+    /* Set grid columns to 2 */
+    grid-template-columns: 1fr ;
+  }
+
+  .grid-2 {
+    /* Set grid columns to 2 */
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 800px) {
+  .grid-1 {
+    /* Set grid columns to 2 */
+    grid-template-columns: 1fr;
+    /* Set a maximum width and center it */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .grid-2 {
+    /* Set grid columns to 2 */
+    grid-template-columns: 1fr 1fr;
+    /* Set a maximum width and center it */
+    max-width: 800px;
+    margin: 0 auto;
+    grid-gap: 90px;
+  }
+}
+
+
+.title{
+  letter-spacing: 2px;
+  font-family: avenir;
+  color: grey;
+  text-shadow: 2px 4px 10px white;
+  text-transform: uppercase;
+}
+ .overlay {
+   background: white;
+   position: fixed;
+   top: 0;
+   right: 0;
+   margin: 0;
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+   font-family: avenir;
+   font-style: bold;
+ }
